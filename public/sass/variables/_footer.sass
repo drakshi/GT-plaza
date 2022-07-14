@@ -1,0 +1,303 @@
+footer
+  background-color: #00204d
+  color: #fff
+
+  .footer-main
+    padding: 40px 40px 20px
+
+  .info
+    padding-left: 0
+
+    img
+      width: 170px
+      margin-bottom: 20px
+
+    h4
+      text-transform: uppercase
+
+    h5
+      font-weight: 400
+
+  .links
+    display: inline-block
+    padding-right: 0
+
+    ul
+      width: 25%
+      padding: 0 10px
+      float: left
+
+      h5
+        margin-bottom: 10px
+        font-weight: 600
+
+      li
+        padding: 5px 0
+        font-size: .875rem
+        color: #fff
+
+        &:hover
+          background-color: unset
+          color: #fe3456
+
+  .social-link
+    float: right
+
+    span
+      display: inline-block
+      width: 100%
+
+    li
+      margin-right: 15px
+      float: left
+
+      a
+        color: #fff
+        transition: .3s
+
+        svg
+          height: 26px
+          fill: white
+
+        &:hover
+          color: #fe3456
+
+      &:last-child
+        margin-right: 0
+
+  .trending
+    border-top: 1px solid #fff
+    padding: 0
+    margin-top: 15px
+
+    ul
+      display: inline-block
+      padding-top: 15px
+      width: calc(100% + 30px)
+      margin: 0 -15px
+
+      li
+        padding: 5px 15px
+        width: max-content
+        float: left
+        font-size: .875rem
+        text-decoration: underline
+
+  .footer-bottom
+    background-color: #fe3456
+    padding: 10px 15px
+
+    .box
+      padding: 7px 0
+
+      h6
+        width: calc(100% + 30px)
+        margin-bottom: 0
+        text-align: center
+
+        span
+          float: right
+
+.footer-login
+  .footer-main
+    display: none
+
+  .footer-bottom
+    background: #004099
+
+
+.g-recaptcha div
+  width: 100% !important
+
+.siteseal
+  position: relative
+  float: left
+  display: block
+
+.footer-login .siteseal
+  position: fixed
+  bottom: 12px
+  display: block
+  right: 10px
+
+.sec-info
+  background: white
+  padding: 20px 0.5rem
+  overflow: hidden
+  .tile
+    padding: 10px 10px
+    .cards
+      h5
+        font-size: 0.9rem
+        margin-bottom: 5px
+        color: black
+        font-weight: 800
+      p
+        font-size: .75rem
+        color: grey
+        margin-bottom: 0
+        b
+          color: black
+
+@media (max-width: 980px)
+  footer
+    .social-link
+      li
+        a
+          svg
+            width: 16px
+    .info
+      padding-left: 0
+      width: 100%
+      max-width: 100%
+      flex: unset
+
+    .links
+      display: inline-block
+      width: 100%
+      max-width: 100%
+      flex: unset
+      padding: 0
+
+      ul
+        padding-left: 0
+        margin: 10px 0
+
+    .social-link
+      float: right
+      margin-top: 12px
+
+    margin-top: 40px
+  .sec-info
+    p
+      line-height: 1.2
+
+.mob-navigation
+  display: none
+
+@media (max-width: 640px)
+  .mob-navigation
+    position: fixed
+    display: block
+    background: #fff
+    bottom: -1px
+    width: 100%
+    left: 0
+    z-index: 99
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%)
+    padding: 14px 0 12px
+
+    ul
+      width: 100%
+      padding: 0
+      margin: 0
+      list-style: none
+
+      li
+        width: 20%
+        text-align: center
+        float: left
+
+        a
+          color: #969696
+
+        &.active a
+          color: #fe3456
+
+        svg
+          width: 15px
+          margin: auto
+
+        span
+          margin: auto
+          width: 100%
+          display: block
+          font-size: .75rem
+  .sec-info
+    .container-fluid
+      padding: 0 5px
+
+  .siteseal
+    position: relative
+    bottom: 0
+    display: block
+    width: 100px
+  footer
+    .social-link
+      float: right
+      margin-top: 3px
+      li
+        margin-right: 10px
+        float: left
+        a
+          svg
+          width: 15px
+
+  .footer-login
+    .siteseal
+      position: relative
+      bottom: 0
+      display: block
+      right: 0
+      margin: 7px 0 10px
+      width: 100%
+      text-align: center
+      img
+        width: 100px
+
+  footer
+    margin: 0 0 60px
+    .footer-main
+      padding: 40px 30px 20px
+
+    .info
+      padding: 0
+      img
+        width: 150px
+        margin-bottom: 10px
+      h4
+        font-size: 1rem
+      h5
+        font-size: .7rem
+      p
+        margin-bottom: 0
+
+    .links
+      display: block
+      padding: 10px 0
+
+      ul
+        width: 100%
+        padding: 0
+        display: inline-block
+        margin-bottom: 5px
+
+        h5
+          margin-bottom: 5px
+          font-size: .857rem
+          font-weight: 700
+
+        li
+          width: max-content
+          float: left
+          padding: 0 15px 0 0
+          margin-bottom: 3px
+          font-size: .7rem
+
+    .trending
+      padding: 0
+
+      ul
+        width: 100%
+        margin: 0
+
+        li
+          font-size: .65rem
+          padding: 0 15px 0 0
+          margin: 3px 0
+
+    .footer-bottom
+      .box
+        h6
+          width: 100%
+          font-size: .8rem

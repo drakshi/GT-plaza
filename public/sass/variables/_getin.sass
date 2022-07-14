@@ -1,0 +1,296 @@
+.forms-getin
+  .align-div
+    display: table
+    padding: 0
+
+  .banner
+    width: 50vw
+    display: table-cell
+    height: 100vh
+    background-image: url(../../../public/assets/images/form-banner.png)
+    background-size: cover
+    background-repeat: no-repeat
+    color: #fff
+    position: relative
+
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 0
+      background: #004099
+      opacity: .8
+      width: 100%
+      height: 100%
+
+    .area
+      height: 100vh
+      z-index: 2
+      padding: 70px 40px 30px
+      position: relative
+
+      h1
+        text-transform: uppercase
+        font-weight: 600
+        margin-bottom: 20px
+        font-size: 1.8rem
+        position: relative
+        padding-top: 50px
+
+        .siteseal
+          position: relative
+          bottom: 0
+          display: block
+          margin: -50px auto 0
+
+.react-multiple-carousel__arrow
+  z-index: 1 !important
+
+.forms-getin
+  .banner .area p
+    position: absolute
+    bottom: 25px
+    width: calc(100% - 80px)
+
+    a
+      float: right
+      color: #fff
+
+      &:hover
+        text-decoration: underline !important
+
+  .fields
+    width: 50%
+    height: 100vh
+    background: #fff
+    display: table-cell
+    vertical-align: middle
+
+    .area
+      width: 480px
+      margin: auto
+      text-align: center
+
+      img
+        margin: 0 auto 15px
+        width: 150px
+        display: block
+        cursor: pointer
+
+      .tabbable-panel
+        .nav-tabs
+          /*border-bottom: 2px solid #004099;
+          margin-bottom: 20px
+
+          /*border: 0;
+          position: relative
+          z-index: 99
+          transition: 0.3s
+
+          li
+            font-size: .875rem
+            padding: 0
+            margin-right: 15px
+            position: relative
+            width: calc(50% - 7.5px)
+
+            a
+              padding: 9px 16px
+              display: block
+              border: 2px solid #c4c4c4
+              border-radius: 5px 5px 0 0
+              background: #fff
+              transition: 0.3s
+              border-bottom: 0
+
+              &:hover
+                background: #fe3456
+                border-color: #fe3456
+                color: white
+
+          .active
+            background: #fe3456
+            border-color: #fe3456
+            color: white
+
+          li:last-child
+            margin-right: 0
+
+        .tab-content
+          padding: 0
+
+      h3
+        font-size: 1.5rem
+        text-transform: uppercase
+        font-weight: 700
+
+      h4
+        display: block
+        font-size: .875rem
+        margin: 10px auto 40px
+        color: $textGrey
+        text-transform: lowercase
+        font-weight: 500
+
+        &:after
+          width: 110px
+          left: 0
+          right: 0
+          margin: auto
+          bottom: -15px
+
+        span
+          font-size: .875rem
+          display: inline-block
+          width: 100%
+          text-transform: lowercase
+          color: $textGrey
+          font-weight: 500
+
+      form
+        .form-group
+          padding: 0 10px
+          width: 50%
+          float: left
+
+          &.text-left
+            width: 100%
+
+          .select2-selection__rendered
+            text-align: left
+
+          .select2-container--default .select2-selection--single
+            height: 40px
+
+            .select2-selection__rendered
+              line-height: 26px
+
+          .form-control
+            height: 40px !important
+
+        .checkbox
+          margin: 5px 0 10px
+          padding: 0 10px
+
+          .item
+            width: max-content
+            float: left
+
+            .label
+              width: max-content
+
+          .forgot
+            float: right
+            font-size: .8rem
+            color: #004099
+            text-decoration: underline
+            font-weight: 600
+            margin-top: 10px
+            position: relative
+            right: 15px
+
+            &:hover
+              text-decoration: underline !important
+              color: #fe3456
+
+        .btn
+          padding: 0 50px
+          font-size: .875rem
+
+      .promo
+        width: 100%
+        text-align: center
+
+        a
+          color: #fe3456
+          font-weight: 600
+          margin-left: 5px
+
+.verification-modal
+  h5
+    font-weight: 700
+  .card
+    width: 100%
+    padding: 20px 10px
+    border-radius: 20px
+    background: #fff
+    border: none
+    position: relative
+
+  .mobile-text
+    color: #989696b8
+    font-size: 15px
+
+  .form-control
+    margin-right: 12px
+    text-align: center
+    padding: 5px
+    width: 40px
+
+    &:focus
+      color: #495057
+      background-color: #fff
+      border-color: #ff8880
+      outline: 0
+      box-shadow: none
+
+  .cursor
+    cursor: pointer
+@media (max-width: 640px)
+  .forms-getin
+    .align-div
+      display: inline-block
+
+    .banner
+      display: none
+
+    .fields
+      width: 100%
+      display: table-cell
+
+      .area
+        width: 100%
+        padding: 30px 0
+        display: inline-block
+        .tabbable-panel
+          padding: 0 14px
+        img
+          width: 200px
+        h1
+          font-size: 1rem
+
+        h2
+          font-size: 12px
+
+          &:after
+            width: 60px
+
+        .tabbable-panel
+          .nav-tabs
+            li
+              a
+                padding: 7px 10px
+        p a
+          width: 100%
+          margin-top: 5px
+
+        form
+          .form-group
+            width: 100%
+          .checkbox
+            .item label
+              font-size: .8rem
+
+            .forgot
+              font-size: .8rem
+              margin-top: 4px
+              font-weight: 500
+
+          .promo a
+            margin-left: 0
+            width: 100%
+            display: inline-block
+
+          .checkbox input
+            margin-top: 2px

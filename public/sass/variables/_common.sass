@@ -1,0 +1,673 @@
+.head
+  padding: 0 0 10px
+
+  h4
+    position: relative
+    font-weight: 800
+    font-size: 18px
+  span
+    text-decoration: underline
+    color: #004099
+    font-weight: 500
+    margin-top: 17px
+    float: right
+    font-size: .875rem
+
+    a
+      color: #000
+      font-weight: 600
+      text-decoration: none
+
+.head-bc
+  .tag
+    padding: 0px 5px
+    margin: 0
+
+    h1
+      margin-bottom: 0px
+      font-size: 1rem
+      font-weight: 800
+      color: #000
+      border-bottom: 2px solid #fe3456
+      padding-bottom: 6px
+      width: max-content
+      max-width: 100%
+
+.hide-info
+  filter: blur(3px)
+  color: #fe3456 !important
+
+.breadcrumb
+  padding: 0 15px
+  display: flex
+  align-items: baseline
+  p
+    font-size: 15px
+    font-weight: 500
+    margin-bottom: 0
+    a
+      color: #004099
+      text-decoration: underline !important
+      &:hover
+        text-decoration: underline !important
+        color: #fe3456
+
+  span
+    font-weight: 500
+
+.table-ul li
+  width: 100%
+  display: inline-flex
+  border: 1px solid #e1e1e1
+
+  span
+    background: #f7f7f7
+    width: 40%
+    display: block
+    padding: 10px
+
+  .value
+    background: #fff
+    width: 60%
+
+
+.user-info
+  display: inline-block
+  padding: 0 5px
+
+  .tile
+    padding: 0 10px
+
+    svg
+      color: #fe3456
+      font-size: 24px
+      float: left
+      margin: 3px 10px 0 0
+      width: 25px
+
+    h6
+      color: $textGrey
+      margin-bottom: 2px
+      float: left
+      font-size: 12px
+      width: calc(100% - 35px)
+      text-transform: inherit
+
+    p
+      font-weight: 700
+      width: calc(100% - 35px)
+      float: left
+      margin-bottom: 0
+
+
+.pagination
+  display: inline-block
+  margin: 20px 0
+
+  li
+    display: inline-block
+    float: left
+    padding: 0 2px
+
+    a
+      display: inline-block
+      text-align: center
+      line-height: 30px
+      min-width: 40px
+      height: 40px
+      padding: 5px 10px
+      border: 1px solid #f8f8f8
+      box-shadow: rgb(149 157 165 / 7%) 0px 4px 24px
+      background-color: #fff
+      font-size: 16px
+      text-decoration: none
+      color: #000
+      cursor: pointer
+      border-radius: 4px
+      overflow: hidden
+      outline: none !important
+
+  .active
+    a
+      background-color: #fe3456 !important
+      border-color: #fe3456 !important
+      color: #fff !important
+
+  .disabled
+    cursor: not-allowed
+
+.business-card
+  width: 270px
+  max-width: 270px
+  padding-right: 0
+  flex: unset
+  border-left: 1px solid #e1e1e1
+
+  .label
+    text-align: right
+    padding: 0
+    width: max-content
+    display: inline-flex
+    float: right
+    right: -25px
+    position: relative
+
+    .icon
+      width: 18px
+      margin: 0 3px
+
+      img
+        max-width: 100%
+
+      &:last-child
+        position: relative
+        width: 100px
+        p
+          position: absolute
+          z-index: 3
+          font-size: 9px
+          color: black
+          font-weight: 800
+          left: 0
+          right: 0
+          padding-left: 10px
+          top: 7px
+          width: 100%
+          text-align: center
+          height: fit-content
+          margin: auto
+        img
+          width: 100%
+
+  a p
+    color: #fe3456
+    text-decoration: underline
+    margin-top: 8px
+    width: 100%
+    display: inline-block
+
+  ul
+    display: inline-flex
+    width: 100%
+
+    li
+      width: 50%
+
+      img
+        width: 18px
+
+      span
+        position: relative
+        top: 1px
+
+  p
+    margin-bottom: 10px
+    margin-top: 15px
+
+    span
+      color: $textGrey
+
+.similar
+  .list
+    padding: 0
+    max-height: 490px
+    overflow-y: auto
+
+    .cards
+      padding: 10px 15px
+      margin-bottom: 5px
+      border-bottom: 1px solid #e1e1e1
+
+      &:first-child
+        padding-top: 0
+
+      &:last-child
+        margin-bottom: 0
+
+  .image
+    width: 50px
+    max-width: 50px
+    padding: 0
+    flex: unset
+
+  .info
+    width: calc(100% - 50px)
+    max-width: calc(100% - 50px)
+    flex: unset
+    padding: 0 0 0 10px
+
+  .list .cards .info
+    top: 0px
+
+  .info
+    a
+      font-size: .8rem
+      margin-bottom: 5px
+      vertical-align: middle
+      display: inherit
+
+    h6
+      margin-bottom: 0
+      color: $textGrey
+
+.no-data
+  display: none
+
+  .t-box
+    background: #fff
+    padding: 50px 15px !important
+    text-align: center
+
+    h5
+      font-weight: 700
+
+    img
+      width: 150px
+      margin-bottom: 20px
+
+    h6
+      color: $textGrey
+
+      &:last-child
+        margin-bottom: 0
+        color: #222831
+
+        span
+          padding-top: 5px
+          display: inline-block
+
+    .btn
+      margin-left: 5px
+      height: 32px
+      padding: 7px 20px
+
+.no_data_2
+  display: block
+
+//Pagination//
+.paginationjs ul
+  display: inline-block
+  margin: 20px 0
+
+  > li
+    display: inline-block
+    float: left
+    padding: 0 2px
+
+  .paginationjs-next, .paginationjs-prev
+    font-weight: 700
+
+  > li > a
+    display: inline-block
+    text-align: center
+    line-height: 30px
+    min-width: 40px
+    height: 40px
+    padding: 5px 10px
+    border: 1px solid #aaa
+    background-color: #fff
+    font-size: 16px
+    text-decoration: none
+    color: #000
+    cursor: pointer
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+
+  li
+    a
+      border-radius: 0 !important
+      background-color: #fff !important
+      border: 1px solid #e1e1e1 !important
+      color: #222831 !important
+      width: 40px
+
+    &.active a
+      background-color: #fe3456 !important
+      color: #fff !important
+
+    &.disabled
+      cursor: not-allowed
+
+//Success//
+#successStories .video-card .video-holder
+  font-weight: 500
+  margin: 0 0 10px
+  text-align: center
+  color: #0c0b0f
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  text-transform: capitalize
+
+  a
+    font-weight: 500
+    margin: 0 0 10px
+    text-align: center
+    color: #0c0b0f
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    text-transform: capitalize
+
+.vid-testimonial .video-content .vid-label h5 a
+  font-weight: 600
+  margin-bottom: 1px
+  color: #222831
+
+  &:hover
+    font-weight: 600
+    margin-bottom: 1px
+    color: #222831
+
+#successStories .video-card .video-holder iframe
+  pointer-events: none
+  cursor: pointer
+
+#homeNewSuccStories .vid-frame, #successStories .video-holder
+  cursor: pointer
+
+.stories
+  .video-holder
+    height: fit-content
+//Modal//
+.modal
+  padding: 0 !important
+.modal-lg
+  width: 700px
+  margin: 0 auto
+  padding: 5px
+  max-width: 100%
+
+.modal-md .modal-footer .close-modal
+  width: 100%
+  color: #fe3456
+  text-decoration: underline
+  margin-top: 5px
+  font-weight: 500
+
+.scroll-text
+  height: 100%
+  text-align: center
+
+  /* animation properties
+  -moz-transform: translateY(395%)
+  -webkit-transform: translateY(395%)
+  transform: translateY(395%)
+  text-align: left
+  -moz-animation: my-animation 50s linear infinite
+  -webkit-animation: my-animation 50s linear infinite
+  animation: my-animation 50s linear infinite
+
+/* for Firefox
+@-moz-keyframes my-animation
+  from
+    -moz-transform: translateY(0%)
+
+  to
+    -moz-transform: translateY(-395%)
+
+/* for Chrome
+@-webkit-keyframes my-animation
+  from
+    -moz-transform: translateY(0%)
+    -webkit-transform: translateY(0%)
+    transform: translateY(0%)
+
+  to
+    -moz-transform: translateY(-395%)
+    -webkit-transform: translateY(-395%)
+    transform: translateY(-395%)
+
+@keyframes my-animation
+  from
+    -moz-transform: translateY(0%)
+    -webkit-transform: translateY(0%)
+    transform: translateY(0%)
+
+  to
+    -moz-transform: translateY(-395%)
+    -webkit-transform: translateY(-395%)
+    transform: translateY(-395%)
+
+.certificate-user
+  .card
+    width: 660px
+    text-align: center
+    padding: 15px 30px
+
+    .view
+      background: white
+      padding: 20px 15px
+      position: relative
+
+    .border-img
+      width: 60px
+      z-index: 9
+      position: absolute
+
+      &.tl
+        top: 30px
+        left: 30px
+
+      &.tr
+        top: 30px
+        right: 30px
+        transform: rotate(90deg)
+
+      &.bl
+        bottom: 30px
+        left: 30px
+        transform: rotateX(180deg)
+
+      &.br
+        bottom: 30px
+        right: 30px
+        transform: rotate(180deg)
+
+    .view
+      &:before
+        content: ""
+        background: linear-gradient(180deg, #FFD15F 31.82%, #ffa565 122.73%)
+        position: absolute
+        width: calc(100% + 6px)
+        height: calc(100% + 6px)
+        left: -3px
+        top: -3px
+        z-index: 0
+        border-radius: 5px
+
+      &:after
+        content: ""
+        background: white
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0px
+        top: 0px
+        z-index: 1
+        border-radius: 5px
+
+      .content
+        z-index: 2
+        display: inline-block
+        position: relative
+
+    .header
+      margin-bottom: 10px
+
+      .icon
+        width: 50px
+        margin-bottom: 10px
+
+      h2
+        width: 100%
+        font-size: 1.1rem
+
+        &:after
+          width: 70px
+          margin: auto
+          left: 0px
+          right: 0px
+
+  .company_info
+    padding-bottom: 10px
+    margin-bottom: 0px
+
+    h4
+      color: #F05454
+      font-weight: 600
+      margin-bottom: 5px
+      &:after
+        display: none
+
+  .company_disc
+    text-align: left
+    border-top: 1px solid #e8e8e8
+    border-bottom: 1px solid #e8e8e8
+    padding: 10px 0px 10px 20px
+
+    p
+      color: #696969
+      font-size: 12px
+
+    ul
+      margin-top: 0px
+      padding: 5px 0px
+
+      li
+        margin: 0px 0px 8px
+        font-size: 13px
+        display: flex
+        align-items: flex-start
+
+        &:last-child
+          margin-bottom: 0px
+
+        span
+          width: 130px
+          display: block
+          color: #696969
+          float: left
+
+        svg
+          display: block
+          margin: 2px 5px 0px 0px
+          color: green
+          float: left
+          width: 14px
+        b
+          width: calc(100% - 180px)
+
+  .issued-on
+    text-align: center
+
+    p
+      margin-top: 8px
+      font-size: 12px
+      text-align: left
+      padding-left: 20px
+
+    ul
+      margin-top: 15px
+      display: flex
+      justify-content: center
+
+      li
+        margin: 0px 0px 8px
+        font-size: 13px
+        color: #696969
+
+        span
+          width: 100%
+          display: block
+          float: left
+          color: #0b0e23
+          font-size: 15px
+          font-weight: 600
+          margin-bottom: 0px
+
+    .logo
+      width: 140px
+      margin-top: 15px
+      margin-bottom: 10px
+
+    h6
+      text-align: center
+      font-size: 14px
+      margin-bottom: 0px
+
+      span
+        width: 100%
+        display: inline-block
+        color: #696969
+
+      .name
+        text-transform: uppercase
+        font-weight: 600
+        color: #222831
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 720px) and (orientation: portrait)
+    .certificate-user .card
+      width: calc(100% - 30px)
+      margin-left: 15px
+
+      .view
+        padding: 20px 15px 40px
+
+    .card .border-img
+      width: 40px
+
+.video-wrapper
+  position: relative
+  height: 0
+  padding-bottom: 56.25%
+
+  iframe
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+.modal-sm
+  max-width: 320px !important
+  margin: auto
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded
+  transform: rotate(135deg)
+@media (max-width: 640px)
+  .head
+    .hide
+      display: none
+    span
+      margin-top: 7px
+    h4
+      font-size: .9rem
+      max-width: 100%
+      &:after
+        height: 3px
+        bottom: -8px
+  .user-info
+    .tile
+      margin: 5px 0
+      &:first-child
+        width: 100%
+        max-width: 100%
+      svg
+        font-size: 20px
+        margin: 7px 8px 0 0
+        width: 20px
+      h6
+        width: calc(100% - 28px)
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded
+  min-height: 40px
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded
+  margin: 10px 0
+
+.css-15v22id-MuiAccordionDetails-root
+  padding: 0 !important
+  .card-body
+    padding-top: 0
+    font-size: 0.86rem
+    line-height: 1.4

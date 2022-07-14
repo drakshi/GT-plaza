@@ -1,0 +1,654 @@
+.singles
+  .product
+    padding: 0
+
+    .left
+      padding: 0 10px
+
+      .products-info
+        padding: 0
+
+        .t-box
+          padding: 15px
+
+        .slider
+          text-align: left
+          width: 300px
+          max-width: 300px
+          flex: unset
+          padding-left: 20px
+
+          .owl-item
+            padding-right: 1px
+
+            .item
+              border: 1px solid #e1e1e1
+
+          .owl-nav
+            display: block
+            position: relative
+            width: 100%
+
+            button
+              height: 40px
+              background: #f7f7f7
+              width: 50%
+
+            .owl-next
+              float: right
+              position: relative
+              transition: .3s
+
+            .owl-prev
+              float: left
+              position: relative
+              transition: .3s
+
+            span
+              color: #004099
+              font-size: 30px
+              font-weight: 600
+              line-height: .8
+
+          &:hover .owl-nav
+            .owl-prev
+              left: 0
+              opacity: 1
+
+            .owl-next
+              right: 0
+              opacity: 1
+
+        .info
+          width: calc(100% - 300px)
+          max-width: calc(100% - 300px)
+          flex: unset
+          text-align: left
+
+          h1
+            font-size: 20px
+            font-weight: 800
+
+          .action
+            padding: 15px 0 0
+
+            button
+              margin-right: 15px
+
+      .product-desc, .product-specs
+        padding: 0
+
+        .t-box
+          padding: 20px 15px
+
+    .right
+      padding: 0 10px
+
+      .business-card
+        width: 100%
+        max-width: 100%
+        padding: 20px 0
+        border: 0
+
+      .similar
+        padding: 10px 0 20px
+
+        .owl-related .t-box
+          text-align: center
+
+  .supplier
+    padding: 0
+
+    .business-banner
+      padding: 0
+      height: 300px
+      border-radius: 5px
+      position: relative
+      margin: 15px 0 50px
+      overflow: hidden
+
+      &:before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        background: #000
+        opacity: .7
+        top: 0
+        left: 0
+        z-index: 1
+
+      .banner-img
+        width: 100%
+        position: relative
+        z-index: 0
+        top: 0
+
+      .business-info
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        height: fit-content
+
+      .top
+        z-index: 3
+
+        .logo
+          width: 90px
+          height: 90px
+          border-radius: 100%
+          background: #fff
+          position: relative
+          margin: 0 auto 10px
+
+          img
+            width: 80%
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            margin: auto
+            border-radius: 100%
+
+        .rank
+          width: 120px
+          margin: 10px auto 20px
+          height: 34px
+          position: relative
+          overflow: hidden
+          img
+            position: absolute
+            top: -32px
+        .label
+          width: max-content
+          margin: 0 auto 10px
+
+          img
+            width: 20px
+            display: block
+            margin: 0 5px
+
+        .name
+          margin: auto
+          width: 100%
+          text-align: center
+
+          h1
+            color: #fff
+            font-size: 22px
+            font-weight: 500
+            text-decoration: underline
+
+          ul
+            width: max-content
+            margin: auto
+            display: inline-flex
+            color: #fff
+
+            li
+              border-right: 1px solid #fff
+              line-height: 1
+              padding: 0 10px
+              font-size: 1rem
+
+              &:last-child
+                border: 0
+
+      .bottom
+        z-index: 3
+        margin-top: 20px
+        padding: 0
+
+        ul
+          width: max-content
+          display: flex
+          margin: auto
+
+          li
+            color: #fff
+            width: max-content
+            padding: 0 40px
+
+            span
+              width: 100%
+              display: block
+              margin-bottom: 5px
+              font-size: 1rem
+
+            .value
+              margin-bottom: 0
+
+              img
+                width: 18px
+                margin-right: 5px
+
+    .action-bar
+      position: sticky
+      top: 0
+      z-index: 9
+      background: $body-bg
+      ul
+        display: inline-flex
+        padding: 0
+        margin: 10px 0 8px
+        li
+          padding: 0 10px
+          font-size: 14px
+          margin-right: 30px
+          position: relative
+          cursor: pointer
+        .active
+          &:after
+            content: ''
+            position: absolute
+            width: 100%
+            left: 0
+            bottom: -8px
+            height: 2px
+            background: $primary
+    .business-profile
+      padding: 0
+      .contact
+        position: sticky
+        top: 20px
+      .info-business
+        padding: 0
+      .t-box
+        padding: 20px 15px 15px
+      .overview
+        padding: 0
+      .deals-in
+        padding: 0
+        ul
+          display: inline-block
+          li
+            float: left
+            width: max-content
+            border: 1px solid #dcdcdc
+            margin: 5px
+            padding: 5px 14px
+            border-radius: 2px
+      .showcase
+        padding: 0
+        .t-box
+          padding-bottom: 10px
+        .shuffle-grid
+          margin: 0 -15px
+          .control-btns
+            margin-left: 15px
+            .btn-group
+              display: inline-block
+            .btn
+              background-color: #f1f1f1
+              color: #000
+              height: 36px
+              width: max-content
+              margin: 5px
+              padding: 10px 25px
+              border-right: 1px solid #e1e1e1
+              margin-right: 1px
+              border-right: 1px solid #d4d4d4
+              &:last-child
+                border-right: 0
+            .active
+              background-color: #004099
+              color: #fff
+          .main-gallery
+            padding: 0 5px
+
+      .product-slider
+        padding: 0
+        .t-box
+          padding-bottom: 20px
+      .details
+        padding: 0 10px
+        .basic
+          padding: 0 10px 0 5px
+        .contact
+          padding: 0 5px 0px 10px
+          .g-recaptcha
+            padding-left: 15px
+          .t-box
+            padding-bottom: 10px
+            &:last-child
+              padding-bottom: 0
+          textarea
+            height: 145px
+      .tod-main
+        .tag
+          width: 60px
+          position: relative
+          display: inline-block
+          &:after
+            content: ''
+            position: absolute
+            width: 4px
+            border-radius: 10px
+            height: 4px
+            background: black
+            right: 10px
+            top: 0
+            bottom: 0
+            margin: auto
+        ul
+          padding-right: 30px
+          li
+            display: inline-block
+            margin: 0 0 0 15px
+            width: 6px
+            height: 6px
+            border-radius: 10px
+            background: $grey-bg
+          .buyer
+            background: $secondary
+          .divided
+            background: $primary
+      .accordion-header
+        button
+          &:after
+            position: relative
+            right: 15px
+      .terms-main
+        h6
+          margin: 15px 0
+        .title
+          position: relative
+          text-align: right
+          &:after
+            content: ''
+            position: absolute
+            width: 1px
+            height: 100%
+            border-radius: 20px
+            top: 0
+            background: $grey-bg
+            z-index: 1
+            right: -11px
+          h6
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              width: 16px
+              height: 16px
+              border-radius: 20px
+              top: 0
+              bottom: 0
+              background: $grey-bg
+              margin: auto
+              z-index: 2
+              right: -30px
+          .buyer
+            &:after
+              background: $secondary
+          .divided
+            &:after
+              background: $primary
+        .desc
+          padding-left: 30px
+    .info
+      h6
+        font-weight: 600
+        margin-bottom: 5px
+        a
+          color: #000
+          transition: .3s
+          &:hover
+            color: #fe3456
+
+      .icons
+        display: inline-flex
+        li
+          display: flex
+          align-items: center
+          font-size: 12px
+          font-weight: 600
+          margin-right: 10px
+          a
+            display: flex
+            align-items: center
+            margin-right: 5px
+          img
+            margin-right: 4px
+            width: 15px
+            height: 15px
+      .user-info
+        padding: 0
+        .tile
+          margin-bottom: 20px
+    .certificate
+      padding: 0
+
+      .t-box
+        padding: 20px 15px 15px
+
+      ul
+        display: inline-block
+        width: 100%
+        margin-left: -10px
+        margin-right: -10px
+        position: relative
+
+        li
+          padding: 5px 10px
+          float: left
+          width: calc(100% / 4)
+
+  .lead
+    padding: 0
+
+    .leads
+      padding: 0
+
+    .home-leads
+      padding: 0 5px
+
+      .head
+        padding: 15px 0 10px 15px
+
+    .list
+      padding: 0
+
+      .cards
+        padding: 20px 30px
+        margin-bottom: 15px
+
+        .info
+          width: 100%
+          max-width: 100%
+          flex: unset
+          padding: 0 15px 0 0
+
+          h1
+            font-size: 18px
+            font-weight: 800
+            float: left
+            width: calc(100% - 40px)
+            padding-left: 5px
+
+          .bottom-info
+            display: inline-flex
+            margin-bottom: 5px
+            float: left
+
+            li
+              border-right: 1px solid #e1e1e1
+              border-color: $textGrey
+              padding-right: 10px
+              line-height: 1
+
+              &:last-child
+                padding-left: 10px
+                border-right: 0
+
+              img
+                width: 30px
+                position: relative
+
+          h6
+            color: $textGrey
+            margin-bottom: 5px
+
+            span
+              color: #004099
+              font-weight: 600
+
+          .btn-div
+            margin-top: 15px
+
+      .category-leads
+        .info ul li .value p
+          margin-bottom: 0
+          padding: 5px
+          background-color: #2e93e6
+          border-radius: 2px
+          color: #fff
+          margin-right: 3px
+          width: max-content
+          float: left
+
+        .user-info .tile h6
+          margin-bottom: 0
+
+        .btn
+          margin: 20px 0 0
+
+    .right
+      padding-left: 0
+
+      h5
+        font-weight: 600
+        margin-top: 5px
+        margin-bottom: 10px
+
+      .t-box
+        float: left
+        padding: 15px 15px 5px
+
+        .box
+          float: left
+          padding: 0
+
+          .related
+            float: left
+            position: relative
+            width: calc(100% + 10px)
+            left: -5px
+            top: -5px
+            margin-bottom: 5px
+
+            li
+              padding: 5px
+              border: 1px solid #e1e1e1
+              border-radius: 2px
+              color: #414141
+              float: left
+              margin: 5px
+              width: max-content
+              font-size: .8rem
+
+@media (max-width: 640px)
+  .singles
+    .product
+      padding: 15px
+      .header
+        padding: 0
+      .right
+        width: 100%
+        flex: unset
+        max-width: 100%
+        .t-box
+          padding: 0 15px
+      .left
+        .products-info
+          padding: 0
+          .slider
+            width: 100%
+            max-width: 100%
+          .info
+            width: 100%
+            max-width: 100%
+            padding: 0
+            flex: unset
+            .action
+              padding: 10px 15px
+              display: inline-block
+              position: fixed
+              z-index: 99
+              bottom: 0
+              background: #fff
+              left: 0
+              box-shadow: 0 0 20px rgb(0 0 0 / 20%)
+              button
+                width: 100%
+
+            h1
+              font-size: 1.1rem
+              font-weight: 600
+              text-align: center
+              margin: 15px 0
+
+    .lead
+      padding: 0 15px
+      .header
+        padding: 0 10px
+      .leads
+        padding: 0
+        margin: 0 -5px
+        width: calc(100% + 10px)
+        max-width: calc(100% + 10px)
+        .btn-div
+          position: fixed
+          z-index: 99
+          bottom: 0
+          left: 0
+          background: #fff
+          height: 60px
+          width: 100%
+          padding: 10px
+          box-shadow: 0 0 20px rgb(0 0 0 / 20%)
+          .btn
+            margin: 0
+            width: 100%
+
+      .list
+        padding: 0 5px
+        .cards
+          padding: 20px 15px
+          .info
+            padding: 0
+
+      .right
+        .t-box
+          margin: 0 -5px 30px
+          width: calc(100% + 10px)
+          max-width: calc(100% + 10px)
+
+      .home-leads
+        padding: 0
+        .list-main
+          padding: 0 10px
+    .supplier
+      .business-banner
+        margin-bottom: 20px
+      .business-profile
+        padding:  0 15px
+        .overview
+          p.description
+            font-size: 12px
+        .action-bar
+          ul
+            li
+              margin-right: 10px
+              font-size: 12px
+        .deals-in
+          ul
+            li
+              margin: 0 5px 5px 0
+              font-size: 10px
+              padding: 5px
+

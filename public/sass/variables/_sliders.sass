@@ -1,0 +1,221 @@
+//Manazine//
+.magazine
+  background-color: #f7f7f7
+  padding: 30px 0
+
+  h3
+    text-transform: uppercase
+    width: 100%
+    text-align: center
+    background: linear-gradient(135deg, #004099 0, #004099 35%, #fe3456 68%, #fe3456 99%)
+    -webkit-background-clip: text
+    font-weight: 800
+    -webkit-text-fill-color: transparent
+
+  .list
+    padding: 0
+
+  ul
+    li
+      display: inline-table
+      padding: 15px
+      width: 130px
+
+      img
+        float: none
+
+  .carousel-button-group
+    text-align: center
+    margin-top: 15px
+
+  .react-multiple-carousel__arrow
+    position: relative
+    left: unset
+    right: unset
+    min-width: 30px
+    width: 30px
+    min-height: 30px
+    height: 30px
+    margin: 0 5px
+    background: #004099
+
+    &:hover
+      background: #fe3456
+
+    &:before
+      font-size: 14px
+
+//Tradeshow//
+.trade-show
+  background-color: #efefef
+  padding: 40px 0
+
+  .t-box
+    padding: 0 15px
+  h3
+    width: 100%
+    text-transform: uppercase
+    font-weight: 700
+    text-align: center
+
+  .list
+    margin-top: 20px
+
+  .block
+    text-align: center
+    padding: 15px 15px 20px
+
+    img
+      margin: 0 0 10px
+
+    p
+      font-weight: 500
+      color: $textGrey
+
+    h6
+      font-weight: 500
+      margin: 0 0 10px
+      text-align: center
+      color: #0c0b0f
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      text-transform: capitalize
+
+      a
+        color: #222831
+
+        &:hover
+          color: #fe3456
+
+  .btn
+    margin: 10px auto 0
+    float: none
+    display: block
+    width: 180px
+    padding: 10px
+
+//Blogs//
+.blog
+  padding: 20px 0 40px
+  .t-box
+    padding: 15px 15px 20px
+  .head
+    text-align: center
+    padding: 10px 0 30px
+
+  .block
+    text-align: center
+    padding: 0
+
+    .t-box
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.06)
+      padding: 15px
+
+    img
+      margin: 0 0 7px
+
+    p
+      margin-bottom: 0
+      font-weight: 600
+      font-size: .8rem
+      color: #004099
+
+    h6
+      font-weight: 500
+      margin: 0 0 10px
+      text-align: center
+      color: #0c0b0f
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      text-transform: capitalize
+
+    ul li
+      color: $textGrey
+
+      &:last-child
+        display: none
+
+      svg
+        margin-right: 5px
+
+      &:hover
+        background: white
+        color: $textGrey
+
+  .btn
+    margin: auto
+    float: none
+    display: block
+    width: 180px
+    padding: 10px
+
+//React//
+.product-slider
+  padding: 0 10px
+
+  .react-multi-carousel-list
+    ul
+      display: inline-flex
+      li
+        padding-left: 0 !important
+        padding-right: 15px !important
+
+  .t-box
+    padding: 20px 15px
+    border: 1px solid #e1e1e1
+    box-shadow: unset
+    .block
+      padding: 0
+
+      .t-box
+        .image
+          position: relative
+          height: 120px
+          margin-bottom: 15px
+
+        p
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+          padding: 0px 10px
+
+    .block
+      .t-box
+        padding: 15px 0
+        text-align: center
+        margin-bottom: 0
+
+        .image img
+          position: absolute
+          width: 100px
+          margin: auto
+          left: 0
+          top: 0
+          right: 0
+          bottom: 0
+
+        h6
+          margin-bottom: 0
+          color: #fe3456
+          font-weight: 600
+
+        .singleSupplier
+          color: #222831
+          white-space: nowrap
+          overflow: hidden
+          padding: 0 15px
+          text-overflow: ellipsis
+
+          &:hover
+            cursor: pointer
+            color: #fe3456
+
+@media (max-width: 640px)
+  .magazine
+    padding: 30px 15px
+    h3
+      font-size: 1rem
+    .carousel-button-group
+      margin-top: 0

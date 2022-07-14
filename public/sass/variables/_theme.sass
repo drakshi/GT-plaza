@@ -1,0 +1,82 @@
+//Color//
+$primary: #fe3456
+$secondary: #004099
+$textBlack: #222831
+$textGrey: #696969
+$body-bg: #f5f7fa
+$grey-bg: #d8d8d8
+
+
+//Guide//
+body
+  font-family: Nunito !important
+  color: $textBlack
+  background: $body-bg
+  width: 100vw
+  max-width: 100vw
+  overflow-x: hidden
+  font-size: 14px
+
+#valid-msg, #valid-msg1, #valid-msg2, #valid-msg3, #valid-msg4, #valid-msg5, #error-msg, #error-msg1, #error-msg2, #error-msg3, #error-msg4, #error-msg5
+  position: absolute
+  right: 20px
+  top: 11px
+  font-size: 12px
+  display: none
+
+.text-hide
+  color: transparent
+
+*
+  text-decoration: unset
+
+*
+  \::-webkit-scrollbar
+    width: 7px
+
+  \::-webkit-scrollbar-track
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+
+  \::-webkit-scrollbar-thumb
+    background-color: #fe3456
+    outline: 1px solid #708090
+
+\::placeholder
+  color: #c4c4c4
+
+a
+  text-decoration: unset !important
+  cursor: pointer
+  color: $textBlack
+  &:hover
+    text-decoration: unset !important
+    cursor: pointer
+
+.n-hover
+  cursor: default !important
+
+img
+  max-width: 100%
+
+ul
+  list-style: none
+  margin-bottom: 0
+  padding-left: 0
+
+  li
+    font-size: .8rem
+
+  a
+    color: $textBlack
+
+    li:hover
+      background-color: #fe3456
+      color: #fff
+
+@media (min-width: 1200px)
+  .container
+    max-width: 1140px
+
+a.more
+  color: $primary
+  font-weight: 500

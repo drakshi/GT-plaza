@@ -1,0 +1,334 @@
+.iti
+  width: 100%
+  z-index: 3
+
+.form-group, .input-group
+  margin-bottom: 15px
+
+.form-control
+  font-family: var(--fontFamily-nunito)
+  font-size: 14px
+
+.form-group .form-control, .input-group .form-control
+  border: 1px solid #e1e1e1
+  border-radius: 2px
+  height: 44px
+  //width: 100%
+
+.react-tel-input .form-control
+  border: 1px solid #e1e1e1 !important
+  border-radius: 2px !important
+  height: 44px !important
+  width: 100% !important
+
+.form-group .form-control:disabled, .input-group .form-control:disabled
+  background-color: #fff
+
+.form-group .form-control:focus, .input-group .form-control:focus
+  box-shadow: unset !important
+  border: 1px solid #e1e1e1
+
+.form-group textarea.form-control, .input-group textarea.form-control
+  height: 100px !important
+  resize: none
+  padding: .75rem
+
+.form-control[disabled]
+  background: #f3f3f3 !important
+  border: 0 !important
+.form-control.is-invalid
+  border-color: #dc3545 !important
+.valid-control.is-invalid
+  padding-left: 5px
+  border-color: #dc3545 !important
+.react-tel-input .form-control.is-invalid
+  border-color: #dc3545 !important
+.is-invalid
+  border: 1px solid #dc3545 !important
+  background-image: none !important
+//.valid-control.is-invalid.css-b62m3t-container
+.valid-control.is-invalid.css-b62m3t-container
+  border: 0 !important
+  .css-1s2u09g-control, .css-1pahdxg-control
+    border: 1px solid #dc3545 !important
+.css-1s2u09g-control, .css-1pahdxg-control
+  box-shadow: unset !important
+input
+  \::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+    appearance: none
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border-radius: 0
+
+select.form-control
+  -webkit-appearance: menulist
+
+
+.select2-container--default
+  width: 100% !important
+
+  .select2-selection--single
+    border: 1px solid #e1e1e1
+    height: 44px
+    font-size: .875rem
+    border-radius: 2px
+    width: 100%
+
+    .select2-selection__rendered
+      line-height: 31px
+      padding: .375rem .75rem
+
+    .select2-selection__arrow
+      height: 100%
+
+  .select2-selection--multiple
+    border: 1px solid #e1e1e1
+    padding: 0 6px
+    height: auto
+    font-size: .875rem
+    border-radius: 2px
+    width: 100%
+
+    .select2-search--inline .select2-search__field
+      margin-top: 0
+      height: 44px
+      line-height: 41px
+
+    .select2-selection__choice
+      margin: 0
+      height: 100%
+      border: 0
+      border-radius: 0
+      border-right: 1px solid #e1e1e1
+      background: unset
+      padding: 6px
+
+    .select2-selection__choice__remove
+      float: right
+      position: relative
+      border: 0
+      color: #fe3456
+      font-size: 16px
+
+    .select2-selection__rendered
+      line-height: 27px
+      padding: 0
+
+    .select2-selection__arrow
+      height: 100%
+
+.append
+  display: flex
+
+  input
+    width: calc(100% - 180px)
+
+  .input-group-append
+    width: 180px
+    position: relative
+
+    .file-select
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      padding: 22px
+      z-index: 5
+      opacity: 0
+      cursor: pointer
+
+      &:hover
+        cursor: pointer
+
+    .btn
+      width: 100%
+      background-color: #fe3456
+      height: 44px
+
+    .addmore
+      position: absolute
+      right: -120px
+      width: 110px
+      padding: 13px
+      background-color: #004099
+
+
+//Checkbox//
+.style-checkbox
+  .link
+    color: $secondary
+    text-decoration: underline !important
+  input[type=checkbox]
+    height: 0
+    width: 0
+    display: none
+
+    + label
+      position: relative
+      display: flex
+      margin: .6em 0
+      font-size: .8rem
+      align-items: center
+      color: #000
+      transition: color 250ms cubic-bezier(0.4, 0, 0.23, 1)
+
+      > span
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: .7em
+        width: 15px
+        height: 15px
+        background: #e8e8e8
+        border: unset
+        border-radius: 1px
+        cursor: pointer
+        transition: all 250ms cubic-bezier(0.4, 0, 0.23, 1)
+
+      &:hover
+        color: #222831
+
+  input[type=checkbox]:checked + label
+    color: #222831
+    span
+      border: .5em solid #fe3456
+      animation: shrink-bounce 0.2s cubic-bezier(0.4, 0, 0.23, 1)
+  ins
+    height: 100%
+
+
+@keyframes shrink-bounce
+  0%
+    transform: scale(1)
+
+  33%
+    transform: scale(0.85)
+
+  100%
+    transform: scale(1)
+
+.switch-button
+  background: rgba(255, 255, 255, 0.56)
+  border-radius: 30px
+  overflow: hidden
+  width: 240px
+  text-align: center
+  font-size: 18px
+  letter-spacing: 1px
+  color: #155fff
+  position: relative
+  padding-right: 120px
+  position: relative
+
+  &:before
+    content: "Video"
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    width: 120px
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 3
+    pointer-events: none
+
+.switch-button-checkbox
+  cursor: pointer
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  z-index: 2
+
+  &:checked + .switch-button-label:before
+    transform: translateX(120px)
+    transition: transform .3s linear
+
+  + .switch-button-label
+    position: relative
+    padding: 15px 0
+    display: block
+    user-select: none
+    pointer-events: none
+
+    &:before
+      content: ""
+      background: #fff
+      height: 100%
+      width: 100%
+      position: absolute
+      left: 0
+      top: 0
+      border-radius: 30px
+      transform: translateX(0)
+      transition: transform .3s
+
+    .switch-button-label-span
+      position: relative
+
+.toggle-mode
+  position: relative
+  width: 150px
+
+  .btn-toggle
+    border: 1px solid #fe3456
+    display: inline-block
+    border-radius: 0
+    margin-bottom: 0
+    color: #000
+    padding: 5px 10px
+    position: relative
+    font-size: .875rem
+    width: 50%
+    text-align: center
+    transition: background .6s ease,color .6s ease
+
+    svg
+      margin-right: 10px
+
+  input[type=radio].toggle
+    display: none
+
+    + label
+      cursor: pointer
+      min-width: 50px
+
+      &:hover
+        background: 0
+        color: #1a1a1a
+
+      &:after
+        background: #fe3456
+        content: ""
+        height: 100%
+        position: absolute
+        top: 0
+        transition: left 0.2s cubic-bezier(0.77, 0, 0.175, 1)
+        width: 100%
+        z-index: -1
+
+    &.toggle-left + label:after
+      left: 100%
+
+    &.toggle-right + label
+      margin-left: -5px
+
+      &:after
+        left: -100%
+
+    &:checked + label
+      cursor: default
+      color: #fff
+      background: #fe3456
+      transition: color .2s
+
+      &:after
+        left: 0

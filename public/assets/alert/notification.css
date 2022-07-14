@@ -1,0 +1,58 @@
+.fooVeK {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    margin-bottom: 0;
+    border-radius: 2px;
+    text-align: left;
+    font-size: 13px;
+    background-color: rgb(251, 229, 228);
+    font-weight: 500;
+    color: #000;
+}
+
+.error-text{
+    color: #D8000C;
+}
+
+.bbiirI {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    color: red;
+}
+
+
+
+.item-animated {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #0f4042;
+    margin: 60px 20px; }
+
+
+.custom-ui {
+    text-align: center;
+    width: 500px;
+    padding: 40px;
+    background: #28bae6;
+    box-shadow: 0 20px 75px rgba(0, 0, 0, 0.23);
+    color: #fff;
+}
+
+.custom-ui > h1 {
+    margin-top: 0;
+}
+
+.custom-ui > button {
+    width: 160px;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin: 10px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    font-size: 14px;
+}

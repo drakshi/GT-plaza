@@ -1,0 +1,317 @@
+.message-count
+  position: relative
+  padding: 6px 15px
+  display: inline-block
+  background: #f7f7f7
+  margin-right: 15px
+  h5
+    float: left
+    font-size: 14px
+    margin: 6px 10px 0 0
+  svg
+    width: 20px
+    display: none
+  .badge-warning
+.inbox_people
+  background: #fff
+  float: left
+  padding: 0
+  overflow: hidden
+  width: 380px
+  height: 100%
+  margin-bottom: 0
+  &.message-block
+    width: 100%
+.inbox_msg
+  clear: both
+  overflow: hidden
+  padding: 0
+  display: inline-block
+  height: 100%
+  width: 100%
+  h5
+    font-size: 18px
+    padding: 20px 15px 0
+    font-weight: 800
+  .tab-content
+    height: calc(100% - 90px)
+    .no-data
+      height: 100%
+      position: relative
+    .t-box
+      border: 0
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      margin: auto
+      height: fit-content
+    .tab-pane
+      height: 100%
+  .nav-tabs
+    padding: 0 15px
+  .nav-link
+    padding: .5rem 0
+    margin-right: 15px
+    font-size: 14px
+    border: 0 !important
+    color: $textGrey
+    border-bottom: 3px solid transparent
+    &.active
+      color: black
+      border: 0
+      border-bottom: 3px solid #fe3456 !important
+.chat_ib
+  float: left
+  padding: 0 0 0 15px
+  h5
+    font-size: 15px
+    color: #464646
+    margin: 0 0 5px 0
+    span
+      font-size: 13px
+      float: right
+      display: none
+  p
+    font-size: 14px
+    color: #989898
+    margin: auto
+.chat_img
+  float: left
+  width: 11%
+.chat_people
+  overflow: hidden
+  clear: both
+  padding: 15px 0
+  border-bottom: 1px solid #EBEBEB
+.chat_list
+  margin: 0
+  padding: 0 15px
+  cursor: pointer
+  &.active
+    background: #F5F5F5
+  &:hover
+    background: #F5F5F5
+.inbox_chat
+  height: 100%
+  overflow-y: auto
+  h5
+    font-size: 15px
+    font-weight: 600
+    padding-left: 0
+    img
+      width: 20px
+      margin-right: 3px
+    span
+      font-weight: 400
+  p
+    font-size: 14px
+    position: relative
+    span
+      position: absolute
+      right: 0
+      top: 0
+.active_chat
+  background: #fe3456
+.active_chat .chat_ib h5, .active_chat .chat_ib p
+  color: white !important
+.received_msg
+  display: inline-block
+  padding: 0 0 0 10px
+  vertical-align: top
+  max-width: 57%
+  width: auto
+.received_withd_msg
+  width: 100%
+  p
+    background: #F2F2F2
+    border-radius: 3px
+    color: #646464
+    font-size: 14px
+    margin: 0
+    padding: 7px 10px
+    width: 100%
+.time_date
+  color: #747474
+  display: block
+  font-size: 12px
+  margin: 4px 0 0
+.message_notify
+  height: 100%
+.mesgs
+  float: left
+  padding: 0
+  width: calc(100% - 400px)
+  margin-left: 20px
+  height: 100%
+  .msg_info
+    padding: 15px
+    border-bottom: 1px solid #e2e2e2
+    .left
+      align-items: center
+      display: flex
+      .chat-close
+        display: none
+        svg
+          width: 12px
+          color: black
+          margin: 10px 15px 10px 0
+    .chat-img
+      img
+        width: 40px
+        margin-right: 10px
+    .chat-name
+      h5
+        padding: 10px 0
+        margin-bottom: 0
+    .right
+      padding: 4px 15px
+      position: relative
+      width: auto
+      .btn-low
+        height: 32px
+        width: 100px
+        left: 0px
+        top: 0px
+        border-radius: 100px
+        padding: 6px 12px 6px 12px
+        background: #dedede
+        color: black
+      .btn-icon
+        width: 32px
+        height: 32px
+        padding: 0
+        border-radius: 100px
+        margin-left: 5px
+        svg
+          width: 17px
+      .info-enquiry
+        position: absolute
+        border-radius: 10px
+        right: 10px
+        top: 40px
+        width: 520px
+        background: #004099
+        color: white
+        padding: 20px 15px
+        opacity: 0
+        z-index: -1
+        transition: 0.3s ease-in-out
+        &.show
+          opacity: 2
+          z-index: 2
+        h5
+          padding: 0
+        h6
+          font-size: 14px
+          margin-bottom: 15px
+        p
+          font-size: 13px
+          font-weight: 800
+          margin-bottom: 4px
+.sent_msg
+  float: right
+  max-width: 57%
+  width: auto
+  p
+    background: white
+    border-radius: 3px
+    border: 1px solid #D1d1d1
+    font-size: 14px
+    margin: 0
+    padding: 7px 10px
+    width: 100%
+.incoming_msg
+  overflow: hidden
+  margin: 26px 0 26px
+.outgoing_msg
+  overflow: hidden
+  margin: 26px 0 26px
+.type_msg
+  border-top: 1px solid #f2f2f2
+  position: relative
+  background: white
+  margin-top: 10px
+  .input_msg_write
+    display: flex
+    width: 100%
+    padding: 15px 20px
+  input
+    padding: 14px
+    height: 44px
+    border: 0
+    background: #F5F5F5
+    margin-right: 15px
+    width: calc(100% - 85px)
+    &:focus-visible
+      border: 0 !important
+      outline: none !important
+.msg_send_btn
+  height: 44px
+  position: relative
+  font-size: 14px
+  padding: 0 15px
+  width: 75px
+.messaging
+  padding: 0
+  height: 100%
+.msg_history
+  overflow-y: auto
+  height: calc(100vh - 360px)
+  padding: 20px 10px
+.chat-board
+  height: calc(100vh - 203px)
+  padding: 0
+
+@media (max-width: 640px)
+  .mesgs
+    .msg_info
+      .left
+        .chat-close
+          svg
+            margin-right: 7px
+  .messaging
+    width: 100%
+    max-width: 100%
+    overflow: hidden
+  .inbox_people
+    width: 100%
+    border: 0
+  .mesgs
+    width: 100%
+    left: 100%
+    position: fixed
+    z-index: 99
+    top: 133px
+    border-radius: 0
+    height: calc(100vh - 200px)
+    margin: 0
+    transition: 0.3s all ease-in-out
+    &.msg-open
+      left: 0
+  .received_msg, .sent_msg
+    max-width: 80%
+  .mesgs .msg_info
+    .left .chat-close
+      display: block
+    .right .info-enquiry
+      width: 300px
+  .inbox_msg
+    max-width: 100%
+    overflow: hidden
+    width: 100%
+    h5
+      padding: 20px 0 0
+      width: 175px
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+      -webkit-line-clamp: 1
+    .nav-tabs
+      padding: 0
+  .chat_list
+    padding: 0
+  .msg_history
+    height: calc(100vh - 355px)

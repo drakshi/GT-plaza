@@ -1,0 +1,14 @@
+.valid-control {
+  border-color: #c4c4c4;
+  height: 44px;
+}
+
+.is-invalid{
+  border-color: #c4c4c4;
+}
+
+.valid-control.invalid {
+  border-color: #ff0000;
+  border-width: 2px;
+  height: 44px;
+}

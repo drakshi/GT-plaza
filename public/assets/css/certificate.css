@@ -1,0 +1,187 @@
+.card{
+    width: 660px;
+    text-align: center;
+    padding: 15px 30px;
+}
+.card .view{
+    background: white;
+    padding: 20px 15px;
+    position: relative;
+}
+.card .border-img{
+    width: 60px;
+    z-index: 9;
+    position: absolute;
+}
+.card .border-img.tl{
+    top: 30px;
+    left: 30px;
+}
+.card .border-img.tr{
+    top: 30px;
+    right: 30px;
+    transform: rotate(90deg);
+}
+.card .border-img.bl{
+    bottom: 30px;
+    left: 30px;
+    transform: rotateX(180deg);
+}
+.card .border-img.br{
+    bottom: 30px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+.card .view:before {
+    content: "";
+    background: linear-gradient(180deg, #FFD15F 31.82%, #ffa565 122.73%);
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    left: -3px;
+    top: -3px;
+    z-index: 0;
+    border-radius: 5px;
+}
+.card .view:after{
+    content: "";
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    border-radius: 5px;
+}
+.card .view .content{
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+}
+
+.card .header{
+    margin-bottom: 10px;
+}
+.card .header .icon{
+    width: 50px;
+    margin-bottom: 10px;
+}
+.card .header h2{
+    width: 100%;
+    font-size: 1.1rem;
+}
+.card .header h2:after{
+    width: 70px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
+.company_info{
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+.company_info h4{
+    color: #F05454;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.company_disc{
+    text-align: left;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 0px 10px 20px;
+}
+.company_disc p{
+    color: #696969;
+    font-size: 12px;
+}
+.company_disc ul{
+    margin-top: 0px;
+    padding: 5px 0px;
+}
+.company_disc ul li{
+    margin: 0px 0px 8px;
+    font-size: 13px;
+}
+.company_disc ul li:last-child{
+    margin-bottom: 0px;
+}
+.company_disc ul li span{
+    width: 130px;
+    display: block;
+    color: #696969;
+    float: left;
+}
+.company_disc ul li svg{
+    display: block;
+    margin: 2px 5px 0px 0px;
+    color: green;
+    float: left;
+    width: 14px;
+}
+.issued-on{
+    text-align: center;
+}
+.issued-on p{
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+}
+.issued-on ul{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.issued-on ul li{
+    margin: 0px 0px 8px;
+    font-size: 13px;
+    color: #696969;
+}
+.issued-on ul li span{
+    width: 100%;
+    display: block;
+    float: left;
+    color: #0b0e23;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.issued-on .logo{
+    width: 140px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.issued-on h6{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.issued-on h6 span{
+    width: 100%;
+    display: inline-block;
+    color: #696969;
+}
+.issued-on h6 .name{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #222831;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 720px)
+and (orientation: portrait) {
+    .certificate-user{
+    }
+    .certificate-user .card{
+        width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+    .certificate-user .card .view{
+        padding: 20px 15px 40px;
+    }
+    .card .border-img{
+        width: 40px;
+    }
+}
